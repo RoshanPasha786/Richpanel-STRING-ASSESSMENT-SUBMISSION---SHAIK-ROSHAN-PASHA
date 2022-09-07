@@ -1,0 +1,105 @@
+.table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+html {
+	font-size: 62.5%;
+}
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: "Open Sans", sans-serif;
+	color:#1e4c90;
+	background-color:white;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.pricing-switcher {
+	text-align: center;
+}
+
+.pricing-switcher .fieldset {
+	display: inline-block;
+	position: relative;
+	padding: 2px;
+	border-radius: 50em;
+	border: 2px solid #1e4c90;
+    background-color: #1e4c90;
+}
+
+.pricing-switcher input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+.pricing-switcher label {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width: 90px;
+	height: 40px;
+    padding-top:3px;
+	line-height: 40px;
+	font-size: 1.4rem;
+	color: white;
+
+}
+
+.pricing-switcher .a{
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width: 90px;
+	height: 40px;
+    padding-top:3px;
+	line-height: 40px;
+	font-size: 1.4rem;
+	color: white;
+
+}
+
+.pricing-switcher .switch {
+	position: absolute;
+	top: 2px;
+	left: 7px;
+	height: 40px;
+	width: 85px;
+    margin-top: 2.5px;
+    background-color: white;
+	border-radius: 50em;
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+
+.pricing-switcher input[type="radio"]:checked + label + .switch,
+.pricing-switcher input[type="radio"]:checked + label:nth-of-type(n) + .switch {
+	-webkit-transform: translateX(90px);
+	-moz-transform: translateX(90px);
+	-ms-transform: translateX(90px);
+	-o-transform: translateX(90px);
+	transform: translateX(90px);
+}
+
+.labeled:checked ~ label {
+    color:#1e4c90;
+    font-weight:bold;
+}
+
+
+
+.no-js .pricing-switcher {
+	display: none;
+}
